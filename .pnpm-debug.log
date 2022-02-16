@@ -1,0 +1,20 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "shortMessage": "Command failed with exit code 1: /tmp/dlx-771018/bin/create-astro --template framework-solid",
+    "command": "/tmp/dlx-771018/bin/create-astro --template framework-solid",
+    "escapedCommand": "\"/tmp/dlx-771018/bin/create-astro\" --template framework-solid",
+    "exitCode": 1,
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "err": {
+      "name": "pnpm",
+      "message": "Command failed with exit code 1: /tmp/dlx-771018/bin/create-astro --template framework-solid",
+      "stack": "pnpm: Command failed with exit code 1: /tmp/dlx-771018/bin/create-astro --template framework-solid\n    at makeError (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:42472:17)\n    at handlePromise (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:43043:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Object.handler (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:177419:7)\n    at async /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:182106:21\n    at async run (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:182080:34)\n    at async runPnpm (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:182299:5)\n    at async /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:182291:7"
+    }
+  }
+}
