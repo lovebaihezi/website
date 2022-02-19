@@ -1,5 +1,5 @@
 ---
-import Counter from '../components/Counter.jsx';
+import styles from "../styles/global.css";
 ---
 
 <html>
@@ -7,22 +7,39 @@ import Counter from '../components/Counter.jsx';
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<style>
+		<style set:html={styles}></style>
+		<style global>
 			html,
 			body {
 				font-family: system-ui;
 				margin: 0;
 			}
-			body {
-				padding: 2rem;
-			}
 		</style>
 	</head>
 	<body>
 		<main>
-			<Counter client:visible>
-				<h1>Hello, Solid!</h1>
-			</Counter>
+			<div class="bg-gradient-to-br from-indigo-900 to-green-900 min-h-screen overflow-auto">
+  				<div class="container max-w-5xl mx-auto px-4">
+    				<div class="w-4/5 mx-auto">
+      					<h1 class="mt-32 text-white text-6xl font-bold">
+							Welcome to<a href="https://astro.build/">Astro</a>
+      					</h1>
+   					 </div>
+    				<div class="w-4/5 my-10 mx-auto">
+      					<h3 class="text-gray-300">
+        					Build faster websites with less
+        					<strong class="text-white">client-side Javascript</strong>
+        					<br />
+        					This is how easy it is to get started
+      					</h3>
+    				</div>
+    				<div class="w-2/5 mx-auto bg-black text-white p-10 leading-10 rounded-2xl shadow-lg">
+      					mkdir astro<br />
+      					cd astro<br />
+      					npm init astro
+    				</div>
+  				</div>
+			</div>
 		</main>
 	</body>
 </html>
